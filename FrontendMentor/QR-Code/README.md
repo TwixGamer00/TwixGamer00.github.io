@@ -13,9 +13,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Preview: [https://your-live-site-url.com](https://your-live-site-url.com)
+- Preview: [TwixGamer00.github.io/FrontendMentor/QR-Code/](https://twixgamer00.github.io/FrontendMentor/QR-Code/)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [TwixGamer00.github.io](https://twixgamer00.github.io/)
 - Frontend Mentor - [@TwixGamer00](https://www.frontendmentor.io/profile/TwixGamer00)
