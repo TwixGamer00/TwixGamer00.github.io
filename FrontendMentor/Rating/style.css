@@ -130,6 +130,7 @@ main.thanks .rate {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   transition: 0.5s;
+  cursor: not-allowed;
 }
 
 .submit.enabled {
