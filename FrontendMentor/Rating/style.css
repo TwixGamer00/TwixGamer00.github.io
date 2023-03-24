@@ -141,12 +141,13 @@ main.thanks .rate {
 .submit.enabled:hover {
   background: var(--white);
   color: var(--orange);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 main.thanks .rate .submit {
   background: var(--white);
   color: var(--orange);
+  transform: scale(1.05);
 }
 
 .thankyou {
