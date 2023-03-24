@@ -114,6 +114,7 @@ main.thanks .rate {
 .option.selected {
   color: #fff;
   background: var(--orange);
+  transform: scale(1.1);
   cursor: default;
 }
 
@@ -140,6 +141,7 @@ main.thanks .rate {
 .submit.enabled:hover {
   background: var(--white);
   color: var(--orange);
+  transform: scale(1.1);
 }
 
 main.thanks .rate .submit {
