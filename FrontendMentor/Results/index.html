@@ -22,13 +22,11 @@
       <div class="result">
         <h3>Your Result</h3>
         <div class="bubble">
-          <h1 id="average">X</h1>
+          <h1 id="average">0</h1>
           <p>of 100</p>
         </div>
-        <h2>Great</h2>
-        <p>
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
+        <h2 id="rating"><br /></h2>
+        <p id="comment"></p>
       </div>
       <div class="summary">
         <h3>Summary</h3>
@@ -38,31 +36,31 @@
               <img src="./images/icon-reaction.svg" alt="" />
               <h4>Reaction</h4>
             </div>
-            <p><b id="reaction">X</b> / 100</p>
+            <p><b id="reaction">0</b> / 100</p>
           </div>
           <div class="memory">
             <div>
               <img src="./images/icon-memory.svg" alt="" />
               <h4>Memory</h4>
             </div>
-            <p><b id="memory">X</b> / 100</p>
+            <p><b id="memory">0</b> / 100</p>
           </div>
           <div class="verbal">
             <div>
               <img src="./images/icon-verbal.svg" alt="" />
               <h4>Verbal</h4>
             </div>
-            <p><b id="verbal">X</b> / 100</p>
+            <p><b id="verbal">0</b> / 100</p>
           </div>
           <div class="visual">
             <div>
               <img src="./images/icon-visual.svg" alt="" />
               <h4>Visual</h4>
             </div>
-            <p><b id="visual">X</b> / 100</p>
+            <p><b id="visual">0</b> / 100</p>
           </div>
         </div>
-        <button>Continue</button>
+        <button onClick="getScores();">Continue</button>
         <div class="mobile-footer">
           <p>
             Challenge by
