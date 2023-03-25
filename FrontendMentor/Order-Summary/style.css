@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background: url("./images/pattern-background-desktop.svg") no-repeat,
+    hsl(225, 100%, 98%);
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1rem;
+  color: hsl(223, 47%, 23%);
+}
+
+footer a {
+  color: hsl(245, 75%, 52%);
+}
+
+main {
+  width: 28.125rem;
+  height: fit-content;
+  background: #fff;
+  text-align: center;
+  margin: auto;
+  border-radius: 2rem;
+  box-shadow: 0 0 1.5rem 0.15rem rgba(0, 0, 0, 0.75);
+}
+
+main > img {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+main > div {
+  padding: 1rem;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%);
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.description {
+  width: 75%;
+  color: hsl(224, 23%, 55%);
+  margin: auto;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(225, 100%, 98%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+}
+
+.details div {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.details h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.details p {
+  color: hsl(224, 23%, 55%);
+}
+
+.price h3 {
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+
+.price h3:hover {
+  color: hsla(245, 75%, 52%, 0.8);
+  text-decoration: none;
+}
+
+button {
+  margin: 0rem 2rem;
+  width: 22.125rem;
+  border: none;
+  outline: none;
+  background: hsl(245, 75%, 52%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: 900;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: hsla(245, 75%, 52%, 0.8);
+}
+
+.cancel {
+  padding: 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: hsl(224, 23%, 55%);
+  width: fit-content;
+  margin: auto;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 31.25rem) {
+  main {
+    width: 80%;
+  }
+  main > div {
+    padding: 0.5rem;
+  }
+  main > img {
+    width: 100%;
+  }
+  .price {
+    margin: 0.5rem;
+  }
+  button {
+    margin: 0.5rem 0;
+    width: 90%;
+  }
+}
