@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+  --white: hsl(0, 0, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+  --light-gray: hsl(212, 45%, 89%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  background: var(--light-gray);
+  min-height: 100vh;
+  display: flex;
+  font-size: 1.125rem;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1rem;
+  color: hsl(224, 30%, 27%);
+}
+
+footer a {
+  color: hsl(241, 81%, 54%);
+}
+
+.mobile-footer {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  display: none;
+  text-align: center;
+}
+
+.mobile-footer a {
+  color: hsl(241, 81%, 54%);
+}
+
+main {
+  width: 42rem;
+  height: fit-content;
+  margin: auto;
+  background: #fff;
+  display: flex;
+  border-radius: 2.5rem;
+}
+
+.result {
+  width: 21rem;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 2.5rem;
+  padding: 2.75rem;
+  text-align: center;
+}
+
+.bubble {
+  background: linear-gradient(hsl(254, 79%, 46%), hsl(246, 86%, 58%));
+  width: 13rem;
+  height: 13rem;
+  padding: 2rem;
+  margin: 1.2rem auto;
+  border-radius: 100%;
+  position: relative;
+}
+
+.bubble p {
+  color: hsl(241, 100%, 89%);
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.result h3 {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.5rem;
+  margin-top: -1rem;
+}
+
+.result h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.result h1 {
+  color: #fff;
+  font-size: 5.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.result p {
+  color: hsl(241, 100%, 89%);
+}
+
+.summary {
+  width: 21rem;
+  padding: 2rem;
+}
+
+.summary h3 {
+  color: hsl(224, 30%, 27%);
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  margin-top: -1rem;
+}
+
+.scores {
+  margin-top: 1rem;
+}
+
+.scores > div {
+  display: flex;
+  justify-content: space-between;
+  height: 3.5rem;
+  margin-bottom: 0.7rem;
+  align-items: center;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+
+.scores > div > div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.scores div img {
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.scores b {
+  color: hsl(224, 30%, 27%);
+}
+
+.scores p {
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: 700;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.reaction h4 {
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.memory h4 {
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.verbal h4 {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.visual h4 {
+  color: hsl(234, 85%, 45%);
+}
+
+.summary button {
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  background: hsl(224, 30%, 27%);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: transform 0.5s;
+}
+
+.summary button:hover {
+  transition: 0.5s;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 42.5rem) {
+  main {
+    width: 100%;
+    display: block;
+    border-radius: 0;
+  }
+
+  .result {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .summary {
+    width: 100%;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .mobile-footer {
+    display: block;
+  }
+}
