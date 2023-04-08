@@ -8,8 +8,8 @@
 }
 
 body {
-  background: url("./images/pattern-background-desktop.svg") no-repeat,
-    hsl(225, 100%, 98%);
+  background: url("./images/pattern-background-desktop.svg"), #e1e9ff;
+  background-repeat: no-repeat, no-repeat;
   background-size: contain;
   min-height: 100vh;
   display: flex;
